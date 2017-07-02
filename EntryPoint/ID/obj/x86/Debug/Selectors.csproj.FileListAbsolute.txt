@@ -1,0 +1,9 @@
+/Users/kevin/Selenium/EntryPoint/ID/obj/x86/Debug/Selectors.csproj.CoreCompileInputs.cache
+/Users/kevin/Selenium/EntryPoint/ID/bin/Debug/ID.exe
+/Users/kevin/Selenium/EntryPoint/ID/bin/Debug/ID.pdb
+/Users/kevin/Selenium/EntryPoint/ID/bin/Debug/WebDriver.dll
+/Users/kevin/Selenium/EntryPoint/ID/bin/Debug/WebDriver.Support.dll
+/Users/kevin/Selenium/EntryPoint/ID/bin/Debug/WebDriver.xml
+/Users/kevin/Selenium/EntryPoint/ID/bin/Debug/WebDriver.Support.xml
+/Users/kevin/Selenium/EntryPoint/ID/obj/x86/Debug/ID.exe
+/Users/kevin/Selenium/EntryPoint/ID/obj/x86/Debug/ID.pdb
