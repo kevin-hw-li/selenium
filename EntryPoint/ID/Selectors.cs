@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿﻿﻿﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
@@ -10,14 +10,15 @@ class Selectors
         string nameUrl = "http://testing.todorvachev.com/selectors/name";
 		string idUrl = "http://testing.todorvachev.com/selectors/id";
 		string classUrl = "http://testing.todorvachev.com/selectors/class-name";
+        string cssPathUrl = "http://testing.todvachev.com/selectors/css-path/";
 
         //open a testing browser
 		IWebDriver driver = new ChromeDriver();
 
-        //search and test element by Name 
+        //search and test element by Name
 		driver.Navigate().GoToUrl(nameUrl);
-		IWebElement elementByName = driver.FindElement(By.Name("myName"));
-		if (elementByName.Displayed)
+		IWebElement nameElement = driver.FindElement(By.Name("myName"));
+		if (nameElement.Displayed)
 		{
 			GreenMessage("The element searched by Name is displayed on the page.");
 		}
@@ -28,8 +29,8 @@ class Selectors
 
 		//search and test element by ID
 		driver.Navigate().GoToUrl(idUrl);
-        IWebElement elementById = driver.FindElement(By.Id("testImage"));
-		if (elementById.Displayed)
+        IWebElement idElement = driver.FindElement(By.Id("testImage"));
+		if (idElement.Displayed)
 		{
 			GreenMessage("The element searched by ID is displayed on the page.");
 		}
@@ -40,11 +41,23 @@ class Selectors
 
 		//search and test element by Class
 		driver.Navigate().GoToUrl(classUrl);
-		IWebElement elementByClass = driver.FindElement(By.ClassName("testClass"));
+		IWebElement classElement = driver.FindElement(By.ClassName("testClass"));
         Console.WriteLine("Inner Text of the testing element is:");
-        GreenMessage(elementByClass.Text);
+        GreenMessage(classElement.Text);
 
-        //exit testing browser
+		//search and test element by CSS Path
+		driver.Navigate().GoToUrl(cssPathUrl);
+		IWebElement CssPathElement = driver.FindElement(By.CssSelector("#post-108 > div > figure > img"));
+		if (CssPathElement.Displayed)
+		{
+			GreenMessage("The element searched by CSS Path is displayed on the page.");
+		}
+		else
+		{
+			RedMessage("Something went wrong. The element searched by CSS Path is not displayed.");
+		}
+
+		//exit testing browser
 		driver.Quit();
 	}
 

@@ -7,3 +7,4 @@
 /Users/kevin/Selenium/EntryPoint/ID/bin/Debug/WebDriver.Support.xml
 /Users/kevin/Selenium/EntryPoint/ID/obj/x86/Debug/ID.exe
 /Users/kevin/Selenium/EntryPoint/ID/obj/x86/Debug/ID.pdb
+/Users/kevin/Selenium/EntryPoint/ID/obj/x86/Debug/Selectors.csprojResolveAssemblyReference.cache

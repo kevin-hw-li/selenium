@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{37EFD334-014D-4384-BD90-C6EF2720186E}|Default">
   <MonoDevelop.Ide.ItemProperties.Selectors PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SeleniumSelectors/Selectors.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ID/Selectors.cs">
     <Files>
-      <File FileName="SeleniumSelectors/Selectors.cs" Line="16" Column="9" />
+      <File FileName="ID/Selectors.cs" Line="22" Column="75" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
